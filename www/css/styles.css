@@ -1,0 +1,107 @@
+html{
+    background-color: #F9F9F9;
+    font-family:"Lato", sans-serif;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 5vh;
+    font-size: 21px;
+    font-weight: 300;
+    color: #333;
+}
+
+body{
+    margin: 0;
+}
+
+.logo{
+    width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slogan{
+    text-align: center;
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.bordealto{
+    border-top-width: thin;
+    border-top-color: #333;
+    border-top-style: solid;
+}
+
+.bordebajo{
+    border-bottom-width: thin;
+    border-bottom-color: #333;
+    border-bottom-style: solid;
+}
+
+.menu{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.menu li{
+    display:inline;
+    font-size: 0.8rem;
+}
+.menu a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+    color:#333;
+}
+.menu a:hover {
+    background-color:#AA0000;
+    color: white;
+}
+
+section{
+    padding-top: 1vw;
+}
+
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.contenido{
+    display: block;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.parrafo{
+    text-align: justify;
+    line-height: 1.75rem;
+    
+}
+
+#sobremi{
+    width: 175px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#log_sec img{
+    width: 80px;
+}
+
+#pie{
+    font-size: 0.75rem;
+    text-align: center;
+}
