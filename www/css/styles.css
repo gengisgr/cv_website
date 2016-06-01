@@ -98,7 +98,29 @@ h3{
 }
 
 #log_sec img{
+    display: block;
+    margin: auto;
     width: 80px;
+    margin-top: 20px;
+}
+
+.fila{
+    display:flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.columna{
+    flex: 1 1 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #F1F1F1;
+    border-color: transparent;
+    border-radius: 20px;
+}
+
+h3,p .columna{
+    margin-bottom: 0;
 }
 
 #pie{
