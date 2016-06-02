@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="imgs/emblema.svg">
 </head>
 
 <body>
@@ -174,8 +175,21 @@
         
         <section id="con_sec" class="bordebajo">
             <h2>Contacto</h2>
-            <div class="contenido">
-                
+            <div class="container1 contenido">  
+              <form id="contact" action="contacto.php" method="post">
+                <fieldset>
+                  <input id=”nombre” name=”nombre” placeholder="Nombre" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                  <input id=”email” name=”email” placeholder="Email" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                  <textarea id=”mensaje” name=”mensaje” placeholder="Mensaje" tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                  <button name="submit" type="submit" id="submit" data-submit="...Enviando">Enviar</button>
+                </fieldset>
+              </form>
             </div>
         </section>
     </main>
