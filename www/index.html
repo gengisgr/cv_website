@@ -30,14 +30,12 @@
         <section id="sob_sec" class="bordebajo">
             <img src="imgs/sobremi.png" alt="Foto de Gengis González" id="sobremi">
             <h2>Sobre Mi</h2>
-            <div class="contenido parrafo">
-                <p>
-                    Como estudiante en dos universidades de manera simultánea he aprendido a manejar de manera efectiva mi tiempo, trabajando con base en metas y proyectos.
-                </p>
-                <p>
-                    Además como voluntario en diferentes organizaciones he aprendido a trabajar en equipo con facilidad, ya sea como miembro del mismo o liderando y supervisando grupos de trabajo.
-                </p>
-            </div>
+            <p class="parrafo">
+                Como estudiante en dos universidades de manera simultánea he aprendido a manejar de manera efectiva mi tiempo, trabajando con base en metas y proyectos.
+            </p>
+            <p class="parrafo">
+                Además como voluntario en diferentes organizaciones he aprendido a trabajar en equipo con facilidad, ya sea como miembro del mismo o liderando y supervisando grupos de trabajo.
+            </p>
         </section>
         
         <section id="hab_sec" class="bordebajo">
@@ -86,31 +84,53 @@
         
         <section id="edu_sec" class="bordebajo">
             <h2>Educación</h2>
-            <div class="contenido">
-                <div class="timeslot">
-                    <span>2014 - 2019</span>
-                    <h3>Ingenieria en Computadores</h3>
-                    <p>
-                        Instituto Tecnológico de Costa Rica<br>
-                        Sede Central Cartago
-                    </p>
-                </div>
-                <div class="timeslot even">
-                    <span>2013 - 2017</span>
-                    <h3>Administración de Empresas</h3>
-                    <p>
-                        Universidad Estatal a Distancia<br>
-                        Centro Académico Desamparados
-                    </p>
-                </div>
-                <div class="timeslot">
-                    <span>2011 - 2012</span>
-                    <h3 lang="en">International Baccalaureate Diploma</h3>
-                    <p>
-                        International Baccalaureate Organization<br>
-                        Liceo de Costa Rica
-                    </p>
-                </div>
+            <div class="container"> <!-- adaptacion de http://bootsnipp.com/snippets/featured/timeline-responsive -->
+                <ul class="timeline">
+                    <li>
+                      <div class="timeline-badge chip img"></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Ingeniería en Computadores</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2014 - 2019</small></p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                Instituto Tecnológico de Costa Rica<br>
+                                Sede Central Cartago
+                            </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge admin img"></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Administración de Empresas</h4>
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2013 - 2017</small></p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                Universidad Estatal a Distancia<br>
+                                Centro Académico Desamparados
+                            </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-badge grad img"></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">International Baccalaureate Diploma</h4>
+                            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2011 - 2012</small></p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                International Baccalaureate Organization<br>
+                                Liceo de Costa Rica
+                            </p>
+                        </div>
+                      </div>
+                </ul>
             </div>
         </section>
         
@@ -119,31 +139,33 @@
             <div class="contenido">
                 <div class="fila">
                     <div class="columna">
-                        <img src="imgs/voluntariado.svg" alt="">
-                        <h3>Voluntariado</h3>
-                        <p>Jornadas Nacionales<br>de Voluntariado</p>
+                        <div class="img imgs volunta"></div>
+                        <h4>Voluntariado</h4>
+                        <p>Jornadas Nacionales de Voluntariado</p>
                         <p>RedUNIVES</p>
                         <p>2015-2016</p>
                     </div>
                     <div class="columna">
-                        <img src="imgs/liderazgo.svg" alt="">
-                        <h3>Liderazgo</h3>
-                        <p>Seminario El Liderazgo<br>de mañana inicia hoy</p>
+                        <div class="img imgs lider"></div>
+                        <h4>Liderazgo</h4>
+                        <p>Seminario El Liderazgo de mañana inicia hoy</p>
                         <p>Procter&amp;Gamble</p>
                         <p>2013</p>
                     </div>
                 </div>
                 <div class="fila">
                     <div class="columna">
-                        <img src="imgs/premio.svg" alt="">
-                        <h3>Emprendedurismo</h3>
-                        <p>Mejor Mini-Empresario<br>Junior Achievement</p>                          <p>Citi Foundation</p>
+                        <div class="img imgs premio"></div>
+                        <h4>Emprendedurismo</h4>
+                        <p>Mejor Mini-Empresario Junior Achievement</p>
+                        <p>Citi Foundation</p>
                         <p>2011</p>
                     </div>
                     <div class="columna">
-                        <img src="imgs/reparacion.svg" alt="">
-                        <h3>Soporte</h3>
-                        <p>Técnico en Mantenimiento<br>y Reparación PC</p>                   <p>Centro de Computación y Servicios M-H</p>
+                        <div class="img imgs repa"></div>
+                        <h4>Soporte</h4>
+                        <p>Técnico en Mantenimiento y Reparación PC</p>
+                        <p>Centro de Computación y Servicios M-H</p>
                         <p>2010</p>
                     </div>
                 </div>
