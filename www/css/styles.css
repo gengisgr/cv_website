@@ -81,6 +81,15 @@ h4{
     margin: 1.5vh;
 }
 
+ul{
+    padding: 0;
+}
+
+ul h4{
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
 .contenido{
     display: block;
     margin-left: 4vw;
@@ -435,4 +444,56 @@ fieldset {
 }
 :-ms-input-placeholder {
  color:#888;
+}
+
+.graficobarras{
+    display: block;
+	position: relative;
+	height: auto;
+}
+
+.barrafondo{
+    border-radius: 5px;
+    background: #DAE4EB;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.barras{
+    font-size: 0.7rem;
+    text-align: left;
+    line-height: 1rem;
+    color: #F9F9F9;
+    background-color: #AA0000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: .5em;
+    position: relative;
+    z-index: 9999;
+    display: block;
+    height: 20px;
+}
+
+.a10{
+    width: 10%;
+}
+
+.a50{
+    width: 50%;
+}
+
+.a60{
+    width: 60%;
+}
+
+.a70{
+    width: 70%;
+}
+
+.a80{
+    width: 80%;
+}
+
+.a90{
+    width: 90%;
 }
