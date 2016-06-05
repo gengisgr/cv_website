@@ -16,24 +16,21 @@ main{
     margin-top: 0;
 }
 
-.logo{
-    width: 30vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+.bordebajo{
+    border-bottom-width: thin;
+    border-bottom-color: #333;
+    border-bottom-style: solid;
 }
 
 .bordealto{
     border-top-width: thin;
     border-top-color: #333;
     border-top-style: solid;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
-.bordebajo{
-    border-bottom-width: thin;
-    border-bottom-color: #333;
-    border-bottom-style: solid;
+section{
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -70,10 +67,6 @@ main{
     padding-top: 70px;
 }
 
-section{
-    padding-top: 1vw;
-}
-
 h2{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
@@ -97,6 +90,11 @@ ul{
     padding: 0;
 }
 
+.info p{
+    font-size: 1rem;
+    
+}
+
 #hab_sec ul h4{
     text-align: center;
     padding-bottom: 2vh;
@@ -115,12 +113,11 @@ ul{
     font-size: 1rem;
 }
 
-#sobremi{
-    width: 175px;
+#sob_sec img{
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
 }
 
 #log_sec img{
