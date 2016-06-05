@@ -1,9 +1,6 @@
 html{
     background-color: #F9F9F9;
     font-family:"Lato", sans-serif;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 5vh;
     font-size: 21px;
     font-weight: 300;
     color: #333;
@@ -13,18 +10,18 @@ body{
     margin: 0;
 }
 
+main{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 0;
+}
+
 .logo{
     width: 30vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-#slogan{
-    text-align: center;
-    margin-top: 0;
-    font-weight: 300;
-    font-size: 0.8rem;
+    margin-bottom: 10px;
 }
 
 .bordealto{
@@ -37,6 +34,8 @@ body{
     border-bottom-width: thin;
     border-bottom-color: #333;
     border-bottom-style: solid;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .menu{
@@ -44,20 +43,31 @@ body{
     margin:0;
     padding:0;
     text-align:center;
+    background-color: #333;
+    
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 100;
 }
 .menu li{
     display:inline;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 .menu a{
     display:inline-block;
-    padding:10px;
+    padding:20px 15px 20px 15px;
     text-decoration: none;
-    color:#333;
+    color:#F9F9F9;
 }
 .menu a:hover {
     background-color:#AA0000;
     color: white;
+}
+
+#sob_sec{
+    padding-top: 70px;
 }
 
 section{
@@ -69,6 +79,8 @@ h2{
     font-weight: 600;
     text-align: center;
     font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 1.66em;
 }
 
 h3{
@@ -85,7 +97,7 @@ ul{
     padding: 0;
 }
 
-ul h4{
+#hab_sec ul h4{
     text-align: center;
     padding-bottom: 2vh;
 }
@@ -125,20 +137,26 @@ ul h4{
 }
 
 .columna{
-    flex: 1 1 100px;
+    flex: 1 1 150px;
     margin: 1vw;
     padding: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 2vh;
+    background-color: #333;
+    margin: 0;
+}
+
+footer p{
+    color: #f9f9f9;
+    font-size: 0.7rem;
 }
 
 p{
     font-size: 0.8rem;
     margin: 1.5vh;
-}
-
-#pie{
-    font-size: 0.75rem;
-    text-align: center;
-    padding: 2vh;
 }
 
 .timeline {
@@ -230,7 +248,7 @@ p{
             left: 50%;
             margin-left: -25px;
             background-color: #F9F9F9;
-            z-index: 100;
+            z-index: 99;
             border-top-right-radius: 50%;
             border-top-left-radius: 50%;
             border-bottom-right-radius: 50%;
@@ -364,6 +382,58 @@ p{
     background-image: url(imgs/reparacion.svg)
 }
 
+.graficobarras{
+    display: block;
+	position: relative;
+	height: auto;
+}
+
+.barrafondo{
+    border-radius: 5px;
+    background: #DAE4EB;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.barras{
+    font-size: 0.7rem;
+    text-align: left;
+    line-height: 1rem;
+    color: #F9F9F9;
+    background-color: #AA0000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: .5em;
+    position: relative;
+    z-index: 99;
+    display: block;
+    height: 20px;
+}
+
+.a10{
+    width: 10%;
+}
+
+.a50{
+    width: 50%;
+}
+
+.a60{
+    width: 60%;
+}
+
+.a70{
+    width: 70%;
+}
+
+.a80{
+    width: 80%;
+}
+
+.a90{
+    width: 90%;
+}
+
 .container1 {
 	max-width:450px;
 	width:100%;
@@ -371,11 +441,12 @@ p{
 	position:relative;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px; }
+#contact input[type="text"], #contact input[type="email"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px; }
 
 #contact {
 	background:#F9F9F9;
 	margin-bottom:7vh;
+    margin-top: 7vh
 }
 
 fieldset {
@@ -386,16 +457,18 @@ fieldset {
 	width: 100%;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
 	width:calc(100% - 25px);
 	border:1px solid #CCC;
 	background:#FFF;
 	margin:0 0 5px;
 	padding:10px;
     border-radius: 10px;
+    font-family: Lato;
+    font-size: 0.7rem;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+#contact input[type="text"]:hover,  #contact input[type="email"]:hover, #contact textarea:hover {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
@@ -416,8 +489,9 @@ fieldset {
 	color:#F9F9F9;
 	margin:0 0 5px;
 	padding:10px;
-	font-size:15px;
     border-radius: 10px;
+    font-family: Lato;
+    font-size: 0.7rem;
 }
 
 #contact button[type="submit"]:hover {
@@ -446,54 +520,6 @@ fieldset {
  color:#888;
 }
 
-.graficobarras{
-    display: block;
-	position: relative;
-	height: auto;
-}
-
-.barrafondo{
-    border-radius: 5px;
-    background: #DAE4EB;
-    margin-bottom: 10px;
-    display: block;
-}
-
-.barras{
-    font-size: 0.7rem;
-    text-align: left;
-    line-height: 1rem;
-    color: #F9F9F9;
-    background-color: #AA0000;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding-left: .5em;
-    position: relative;
-    z-index: 9999;
-    display: block;
-    height: 20px;
-}
-
-.a10{
-    width: 10%;
-}
-
-.a50{
-    width: 50%;
-}
-
-.a60{
-    width: 60%;
-}
-
-.a70{
-    width: 70%;
-}
-
-.a80{
-    width: 80%;
-}
-
-.a90{
-    width: 90%;
+#con_sec p{
+    text-align: center;
 }

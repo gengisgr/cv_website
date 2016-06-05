@@ -12,23 +12,21 @@
 
 <body>
     <header>
-        <img src="imgs/logo.svg" alt="Gengis González Logo" class="logo">
-        <h3 id="slogan">Programador Junior</h3>
-        
         <nav>
-            <ul class="menu bordealto bordebajo">
-                <li><a href="#sob_sec">Sobre Mi</a></li>
-                <li><a href="#hab_sec">Habilidades</a></li>
-                <li><a href="#edu_sec">Educación</a></li>
-                <li><a href="#log_sec">Logros</a></li>
-                <li><a href="#con_sec">Contacto</a></li>
-                <li><a href="docs/cv.pdf" download="CV_Gengis_Gonzalez">Descargar CV</a></li>
+            <ul class="menu">
+                <li><a href="#sob_sec">SOBRE MI</a></li>
+                <li><a href="#hab_sec">HABILIDADES</a></li>
+                <li><a href="#edu_sec">EDUCACIÓN</a></li>
+                <li><a href="#log_sec">LOGROS</a></li>
+                <li><a href="#con_sec">CONTACTO</a></li>
+                <li><a href="docs/cv.pdf" download="CV_Gengis_Gonzalez">DESCARGAR CV</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
         <section id="sob_sec" class="bordebajo">
+            <img src="imgs/logo.svg" alt="Gengis González Logo" class="logo">
             <img src="imgs/sobremi.png" alt="Foto de Gengis González" id="sobremi">
             <h2>Sobre Mi</h2>
             <p class="parrafo">
@@ -66,19 +64,19 @@
                     <section class="graficobarras columna">
                         <ul>
                             <h4>Herramientas de Desarrollo</h4>
-                            <span class="barra-fondo">
+                            <span class="barrafondo">
                                 <li class="barras a90">Python IDLE</li>
                             </span>
-                            <span class="barra-fondo">
+                            <span class="barrafondo">
                                 <li class="barras a80">Eclipse IDE</li>
                             </span>
-                            <span class="barra-fondo">
+                            <span class="barrafondo">
                                 <li class="barras a60">Visual Studio</li>
                             </span>
-                            <span class="barra-fondo">
+                            <span class="barrafondo">
                                 <li class="barras a70">Intel XDK</li>
                             </span>
-                            <span class="barra-fondo">
+                            <span class="barrafondo">
                                 <li class="barras a70">Android Studio</li>
                             </span>
                         </ul>
@@ -101,20 +99,6 @@
                     </section>
                     <section class="graficobarras columna">
                         <ul>
-                            <h4>Idiomas</h4>
-                            <span class="barrafondo">
-                                <li class="barras a90">Español</li>
-                            </span>
-                            <span class="barrafondo">
-                                <li class="barras a80">Ingles</li>
-                            </span>
-                            <span class="barrafondo">
-                                <li class="barras a10">Alemán</li>
-                            </span>
-                        </ul>
-                    </section>
-                    <section class="graficobarras columna">
-                        <ul>
                             <h4>Bases de Datos</h4>
                             <span class="barrafondo">
                                 <li class="barras a50">SQL</li>
@@ -124,6 +108,20 @@
                             </span>
                             <span class="barrafondo">
                                 <li class="barras a50">MongoDB</li>
+                            </span>
+                        </ul>
+                    </section>
+                    <section class="graficobarras columna">
+                        <ul>
+                            <h4>Idiomas</h4>
+                            <span class="barrafondo">
+                                <li class="barras a90">Español</li>
+                            </span>
+                            <span class="barrafondo">
+                                <li class="barras a80">Ingles</li>
+                            </span>
+                            <span class="barrafondo">
+                                <li class="barras a10">Alemán</li>
                             </span>
                         </ul>
                     </section>
@@ -221,31 +219,51 @@
             </div>
         </section>
         
-        <section id="con_sec" class="bordebajo">
+        <section id="con_sec">
             <h2>Contacto</h2>
-            <div class="container1 contenido">  
-              <form id="contact" action="contacto.php" method="post">
-                <fieldset>
-                  <input id=”nombre” name=”nombre” placeholder="Nombre" type="text" tabindex="1" required>
-                </fieldset>
-                <fieldset>
-                  <input id=”email” name=”email” placeholder="Email" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                  <textarea id=”mensaje” name=”mensaje” placeholder="Mensaje" tabindex="5" required></textarea>
-                </fieldset>
-                <fieldset>
-                  <button name="submit" type="submit" id="submit" data-submit="...Enviando">Enviar</button>
-                </fieldset>
+            <div class="container1 contenido">
+                <form id="contact" action="index.php#con_sec" method="POST">
+                    <fieldset>
+                        <input name="nombre" placeholder="Nombre" type="text" tabindex="1" required>
+                    </fieldset>
+                    <fieldset>
+                        <input name="email" placeholder="Email" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <textarea name="mensaje" placeholder="Mensaje" type="text" tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" value="submit" type="submit">Enviar</button>
+                    </fieldset>
+                    
+                    <!-- <?php
+                        $name = $_POST['nombre'];
+                        $email = $_POST['email'];
+                        $message = $_POST['mensaje'];
+                        $to = 'admin@gengis.info'; 
+                        $subject = 'Mensaje desde gengis.info';
+                    
+                        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+                    if ($_POST['submit']) {
+                        if (mail ($to, $subject, $body)) { 
+                            echo '<p style="text-align:center">¡Gracias, pronto me pondré en contacto!</p>';
+                        } else { 
+                            echo '<p style="text-align:center">Lo siento, no ha sido posible enviar tu mensaje</p>'; 
+                        }
+                    }
+                    ?> -->
+                    
               </form>
+                
             </div>
         </section>
     </main>
     
-    <footer id="pie">
+    <footer>
         <p>
             Diseño Original por Gengis González<br>
-            Todos los derechos reservados
+            Todos los derechos reservados.
         </p>
     </footer>
 </body>
